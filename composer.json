@@ -1,0 +1,21 @@
+{
+    "name": "slydeath/laravel5-webpack",
+    "description": "Laravel 5 Webpack integration",
+    "license": "MIT",
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "SlyDeath",
+            "email": "slyrs@yandex.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "SlyDeath\\Webpack\\": "src/"
+        }
+    },
+    "require": {
+        "illuminate/support": "^5.2"
+    }
+}
