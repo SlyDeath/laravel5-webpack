@@ -1,4 +1,7 @@
 # Laravel 5 Webpack integration
+[![Latest Stable Version](https://poser.pugx.org/slydeath/laravel5-webpack/v/stable)](https://packagist.org/packages/slydeath/laravel5-webpack)
+[![Total Downloads](https://poser.pugx.org/slydeath/laravel5-webpack/downloads)](https://packagist.org/packages/slydeath/laravel5-webpack)
+[![License](https://poser.pugx.org/slydeath/laravel5-webpack/license)](https://packagist.org/packages/slydeath/laravel5-webpack)
 
 ## Установка
 
