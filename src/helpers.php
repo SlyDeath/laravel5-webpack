@@ -30,11 +30,15 @@ if (!function_exists('webpack')) {
 
             if (App::isLocal() && !File::exists(public_path($manifest[$bundle][$extension]))) {
 
-                $secure = config('webpack.dev_server.https', false);
-                $server = config('webpack.dev_server.ip', '127.0.0.1');
-                $port = config('webpack.dev_server.port', 8080);
+                $url = '';
 
-                $url = 'http' . ($secure ? 's://' : '://') . $server . ':' . $port;
+                if (!preg_match('~^(http\:\/\/|https\:\/\/)~i', $manifest[$bundle][$extension])) {
+                    $secure = config('webpack.dev_server.https', false);
+                    $server = config('webpack.dev_server.ip', '127.0.0.1');
+                    $port = config('webpack.dev_server.port', 8080);
+
+                    $url = 'http' . ($secure ? 's://' : '://') . $server . ':' . $port;
+                }
 
                 return $url . $manifest[$bundle][$extension];
             }
