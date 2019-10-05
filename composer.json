@@ -13,8 +13,5 @@
         "psr-4": {
             "SlyDeath\\Webpack\\": "src/"
         }
-    },
-    "require": {
-        "illuminate/support": "^5.2"
     }
 }
